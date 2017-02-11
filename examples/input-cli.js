@@ -8,7 +8,7 @@ when using TV, we need to start the TV app (here the analog TV, perhaps digital
 TV needs a different app).
  */
 /*---------------------------------------------------------------------------*/
-lgtv = require("lg");
+lgtv = require("lgtv");
 /*---------------------------------------------------------------------------*/
 var args = process.argv.slice(2);
 var input = "HDMI_1";

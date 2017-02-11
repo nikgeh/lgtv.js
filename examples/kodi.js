@@ -10,15 +10,13 @@ var run_test = function() {
         console.log("Found TV at address " + ipaddr + ", running example.");
         lgtv.connect(ipaddr, function(err, response){
           if (!err) {
-            lgtv.open_browser_at("http://github.com/msloth", function(err, response){
-              if (!err) {
-                lgtv.disconnect();
-              }
+            lgtv.set_input("HDMI_2", function(err, response){
+              lgtv.disconnect();
             });
           }
         });
       }
     });
 };
-console.log("running open-browser");
+
 run_test();
